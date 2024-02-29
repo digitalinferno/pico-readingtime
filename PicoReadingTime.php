@@ -12,7 +12,8 @@
  * @license https://opensource.org/licenses/MIT The MIT License
  * @version 0.9
  */
-class PicoReadingTime extends AbstractPicoPlugin {
+class PicoReadingTime extends AbstractPicoPlugin
+{
 
     const API_VERSION = 3;
     protected $enabled = true;   
@@ -26,7 +27,7 @@ class PicoReadingTime extends AbstractPicoPlugin {
 
     public function  onPageRendering(&$twig, &$twigVariables)
     {
-  	    $twigVariables['ReadingTime']  =  $this->read;
+        $twigVariables['ReadingTime']  =  $this->read;
     }
 
 }
