@@ -1,11 +1,12 @@
 <?php
+
 /**
- * Pico reading time plugin.
+ * Reading time plugin for Pico CMS.
  *
  * PicoReadingTime allows you to easily add an estimated reading time to your
  * page's content. The plugin is enabled by default, and the time is displayed
- * in minutes. To add the reading time to your page, simply add { ReadingTime }
- * inside your tpl file.
+ * in minutes. To add the reading time to your content, simply add
+ * {{ ReadingTime }} inside your tpl file.
  *
  * @author  Giovanni Forte <giovanni@teamvodka.eu>
  * @link    https://teamvodka.eu
@@ -14,7 +15,6 @@
  */
 class PicoReadingTime extends AbstractPicoPlugin
 {
-
     const API_VERSION = 3;
     protected $enabled = true;   
   
